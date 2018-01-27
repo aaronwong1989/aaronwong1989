@@ -12,7 +12,7 @@
     
     <title>
         
-            归档 | 
+            hello_test1 | 
         
         javawa技术分享博客
     </title>
@@ -36,7 +36,7 @@
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="Aaron Wong">
     <meta name="description" itemprop="description" content="java/spring/spring-boot/cloud/docker">
-    <meta name="keywords" content="java,spring,spring boot,spring cloud,docker">
+    <meta name="keywords" content="java,spring,spring boot,spring cloud,docker,test">
 
     <!-- Site Verification -->
     
@@ -65,15 +65,18 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://www.javawa.top">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="归档 | javawa技术分享博客">
+    <meta property="og:title" content="hello_test1 | javawa技术分享博客">
     <meta property="og:image" content="/favicon.ico" />
     <meta property="og:description" content="java/spring/spring-boot/cloud/docker">
-    
+    <meta property="og:article:tag" content="test"> 
 
+    
+        <meta property="article:published_time" content="1月 27, 2018" />
+        <meta property="article:modified_time" content="1月 27, 2018" />
     
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="归档 | javawa技术分享博客">
+    <meta name="twitter:title" content="hello_test1 | javawa技术分享博客">
     <meta name="twitter:description" content="java/spring/spring-boot/cloud/docker">
     <meta name="twitter:image" content="/favicon.ico">
     <meta name="twitter:card" content="summary_large_image" />
@@ -81,13 +84,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://www.javawa.top/archives/index.html" />
+        <link rel="canonical" href="http://www.javawa.top/2018/01/27/hello-test1/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "javawa技术分享博客",
+        "logo": "/favicon.ico"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Aaron Wong",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/favicon.ico"
+        },
+        "description": "Hi, nice to meet you"
+    },
+    "headline": "hello_test1",
+    "url": "http://www.javawa.top/2018/01/27/hello-test1/index.html",
+    "datePublished": "1月 27, 2018",
+    "dateModified": "1月 27, 2018",
+    "description": "java/spring/spring-boot/cloud/docker",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://www.javawa.top"
+    }
+}
+</script>
 
 
     
@@ -298,155 +331,307 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#spring-cloud-security"><span class="post-toc-number">1.</span> <span class="post-toc-text">spring-cloud-security</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#统一开发工具代码格式化"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">统一开发工具代码格式化</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#lombok安装"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">lombok安装</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#工程结构说明"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">工程结构说明</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#示例微服务"><span class="post-toc-number">2.</span> <span class="post-toc-text">示例微服务</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#各组件的高可用实现"><span class="post-toc-number">3.</span> <span class="post-toc-text">各组件的高可用实现</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Eureka-Server（scs-registry）-高可用"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">Eureka Server（scs-registry） 高可用</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#port-8888"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">  port: 8888</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#port-8889"><span class="post-toc-number">3.3.</span> <span class="post-toc-text">  port: 8889</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#在微服务的bootstrap-yml中配置-，注意必须是bootstrap-yml不可以是application-yml"><span class="post-toc-number">4.</span> <span class="post-toc-text">在微服务的bootstrap.yml中配置 ，注意必须是bootstrap.yml不可以是application.yml</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#配置服务发现，多个注册中心时defaultZone要指定多个url，逗号分割"><span class="post-toc-number">5.</span> <span class="post-toc-text">配置服务发现，多个注册中心时defaultZone要指定多个url，逗号分割</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#RabbitMQ-高可用"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">RabbitMQ 高可用</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#gateway-高可用"><span class="post-toc-number">5.2.</span> <span class="post-toc-text">gateway 高可用</span></a></li></ol></li></ol>
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/01/27/hello-test1/">hello_test1</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/01/27/hello-test1/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="Aaron Wong's avatar">
-            </div>
-            <div>
-                <strong>Aaron Wong</strong>
-                <span>1月 27, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/01/27/hello-world/">Hello World</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            Welcome to Hexo
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/01/27/hello-world/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="Aaron Wong's avatar">
-            </div>
-            <div>
-                <strong>Aaron Wong</strong>
-                <span>1月 27, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                hello_test1
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Aaron Wong</strong>
+        <span>1月 27, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+    
+        <img src="https://pan.baidu.com/share/qrcode?w=246&h=246&url=http://www.javawa.top/2018/01/27/hello-test1/">
+    
+</ul>
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/test/">test</a>
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=hello_test1&url=http://www.javawa.top/2018/01/27/hello-test1/index.html&pic=&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=hello_test1&url=http://www.javawa.top/2018/01/27/hello-test1/index.html&via=Aaron Wong" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://www.javawa.top/2018/01/27/hello-test1/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://www.javawa.top/2018/01/27/hello-test1/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+        <a class="post_share-link" href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.javawa.top/2018/01/27/hello-test1/index.html&title=hello_test1" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 LinkedIn
+            </li>
+        </a>
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=javawa技术分享博客&title=hello_test1&summary=java/spring/spring-boot/cloud/docker&pics=http://www.javawa.top/favicon.ico&url=http://www.javawa.top/2018/01/27/hello-test1/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+        <a class="post_share-link" href="https://telegram.me/share/url?url=http://www.javawa.top/2018/01/27/hello-test1/index.html&text=hello_test1" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Telegram
+            </li>
+        </a>
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h1 id="spring-cloud-security"><a href="#spring-cloud-security" class="headerlink" title="spring-cloud-security"></a>spring-cloud-security</h1><p>学习spring cloud 与 spring security oAuth2.0</p>
+<h2 id="统一开发工具代码格式化"><a href="#统一开发工具代码格式化" class="headerlink" title="统一开发工具代码格式化"></a>统一开发工具代码格式化</h2><ul>
+<li><p>IDEA </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">settings -&gt; plugins -&gt; 安装 Eclipse Code Formatter </span><br><span class="line">restart IDEA</span><br><span class="line">settings -&gt; other settings -&gt; Eclipse Code Formatter 启用并导入项目根目录下的formatter.xml</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>ECLIPSE </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">window - &gt; preferences  -&gt;  Code Style -&gt; Formatter -&gt; </span><br><span class="line">import  项目根目录下的formatter.xml</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="lombok安装"><a href="#lombok安装" class="headerlink" title="lombok安装"></a>lombok安装</h2><p>本工程依赖lombok（因为作者太懒，Lombok能简化代码开发）<br><a href="http://jnb.ociweb.com/jnb/jnbJan2010.html#installation" target="_blank" rel="noopener">lombok安装使用</a></p>
+<h2 id="工程结构说明"><a href="#工程结构说明" class="headerlink" title="工程结构说明"></a>工程结构说明</h2><ul>
+<li>模块说明</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- config-repo 配置中心的配置文件 --&gt;</span><br><span class="line">&lt;module&gt;scs-common&lt;/module&gt;         &lt;!--公共的对象，配置定义--&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- 产品化组件 --&gt;</span><br><span class="line">&lt;module&gt;scs-config&lt;/module&gt;         &lt;!--配置中心--&gt;</span><br><span class="line">&lt;module&gt;scs-registry&lt;/module&gt;       &lt;!--服务注册中心--&gt;</span><br><span class="line">&lt;module&gt;监控中心&lt;/module&gt;            &lt;!--监控中心--&gt;</span><br><span class="line">&lt;module&gt;scs-zipkin&lt;/module&gt;         &lt;!--日志跟踪系统--&gt;</span><br><span class="line"></span><br><span class="line">&lt;module&gt;scs-gateway&lt;/module&gt;        &lt;!--API网关--&gt;</span><br><span class="line"></span><br><span class="line">&lt;!--&lt;module&gt;scs-auth&lt;/module&gt;--&gt;    &lt;!--授权认证中心--&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- 微服务 --&gt;</span><br><span class="line">&lt;module&gt;scs-kefu&lt;/module&gt;           &lt;!--客服微服务（可以接收客户消息并回复客户）--&gt;</span><br><span class="line">&lt;module&gt;scs-customer&lt;/module&gt;       &lt;!--接收客户消息并处理/接收客服发送给客户的消息并转发客户（主动和被动）--&gt;</span><br></pre></td></tr></table></figure>
+<p>其中 监控中心 不能使用该版本SpringCloud构建，请使用 <a href="https://gitee.com/aaronsd/spring-boot-monitor" target="_blank" rel="noopener">spring-boot-monitor</a></p>
+<ul>
+<li><p>本地运行该程序需要修改hostname</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">127.0.0.1	 peer1 peer2 peer3</span><br><span class="line">127.0.0.1	 registry config monitor rabbitmq gateway auth-service</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>生产环境应该都是使用不同的虚拟机（docker/云服务器）部署，微服务都需要修改其hostname，如</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># eureka 高可用集群</span><br><span class="line">xxx.xxx.xxx.101	 registry1</span><br><span class="line">xxx.xxx.xxx.102	 registry2</span><br><span class="line">xxx.xxx.xxx.103	 registry3</span><br><span class="line"></span><br><span class="line"># rabbitmq 高可用集群</span><br><span class="line">xxx.xxx.xxx.104	 rabbitmq1</span><br><span class="line">xxx.xxx.xxx.105	 rabbitmq2</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h1 id="示例微服务"><a href="#示例微服务" class="headerlink" title="示例微服务"></a>示例微服务</h1><ul>
+<li>scs-kefu 平台客服妹子使用的微服务</li>
+<li>scs-customer 用于接收用户各类消息的微服务，客服消息转发给客服</li>
+<li>安全采用 http basic auth 详细见 <a href="https://gitee.com/aaronsd/spring-cloud-security/blob/master/BASIC-AUTH.md" target="_blank" rel="noopener">BASIC-AUTH.MD</a></li>
+<li>master分支对url进行了调整,见UML图，测试方法参考 <a href="https://gitee.com/aaronsd/spring-cloud-security/blob/master/BASIC-AUTH.md" target="_blank" rel="noopener">BASIC-AUTH.MD</a></li>
+</ul>
+<p><img src="https://gitee.com/uploads/images/2018/0124/155359_447ea0e2_722875.png" alt="&quot;customer-kefu" title="customer-kefu.png"></p>
+<p><img src="https://gitee.com/uploads/images/2018/0124/155422_946e4550_722875.png" alt="kefu-customer" title="kefu-customer.png"></p>
+<p><img src="https://gitee.com/uploads/images/2018/0124/155443_b629d49d_722875.png" alt="gateway-customer-kefu" title="gateway-customer-kefu.png"></p>
+<p><img src="https://gitee.com/uploads/images/2018/0124/155505_8a0bd34f_722875.png" alt="gateway-kefu-customer" title="gateway-kefu-customer.png"></p>
+<h1 id="各组件的高可用实现"><a href="#各组件的高可用实现" class="headerlink" title="各组件的高可用实现"></a>各组件的高可用实现</h1><h2 id="Eureka-Server（scs-registry）-高可用"><a href="#Eureka-Server（scs-registry）-高可用" class="headerlink" title="Eureka Server（scs-registry） 高可用"></a>Eureka Server（scs-registry） 高可用</h2><ul>
+<li>修改application.yml</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"># 本地运行时需要以下配置,3个registry两两相互注册，生产环境使用3台不同的服务器不需要换port</span><br><span class="line">---</span><br><span class="line">spring:</span><br><span class="line">  profiles: registry1</span><br><span class="line">server:</span><br><span class="line">  port: 8761</span><br><span class="line">eureka:</span><br><span class="line">  instance:</span><br><span class="line">    hostname: peer1</span><br><span class="line">  client:</span><br><span class="line">    registerWithEureka: true</span><br><span class="line">    service-url:</span><br><span class="line">      defaultZone: http://user:$&#123;security.user.password&#125;@peer2:8762/eureka/,http://user:$&#123;security.user.password&#125;@peer3:8763/eureka/</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line">spring:</span><br><span class="line">  profiles: registry2</span><br><span class="line">server:</span><br><span class="line">  port: 8762</span><br><span class="line">eureka:</span><br><span class="line">  instance:</span><br><span class="line">    hostname: peer2</span><br><span class="line">  client:</span><br><span class="line">    registerWithEureka: true</span><br><span class="line">    service-url:</span><br><span class="line">     defaultZone: http://user:$&#123;security.user.password&#125;@peer1:8761/eureka/,http://user:$&#123;security.user.password&#125;@peer3:8763/eureka/</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line">spring:</span><br><span class="line">  profiles: registry3</span><br><span class="line">server:</span><br><span class="line">  port: 8763</span><br><span class="line">eureka:</span><br><span class="line">  instance:</span><br><span class="line">    hostname: peer3</span><br><span class="line">  client:</span><br><span class="line">    registerWithEureka: true</span><br><span class="line">    service-url:</span><br><span class="line">     defaultZone: http://user:$&#123;security.user.password&#125;@peer1:8761/eureka/,http://user:$&#123;security.user.password&#125;@peer2:8762/eureka/</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>启动scs-registry时指定激活的profile</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">java -Dspring.profiles.active=registry3 -jar scs-registry.jar</span><br><span class="line">或者</span><br><span class="line">java -jar scs-registry.jar --spring.profiles.active=registry3</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改微服务的bootstrap.yml</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">eureka.client.service-url.defaultZone: http://user:password@peer1:8761/eureka/,http://user:password@peer2:8762/eureka/,http://user:password@peer3:8763/eureka/</span><br><span class="line">```   </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">## Spring Cloud Config（scs-config） 高可用</span><br><span class="line">* 修改application.yml</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>eureka:<br>  instance:<br>    hostname: registry<br>    prefer-ip-address: true<br>    metadata-map:<br>      user.name: ${security.user.name}<br>      user.password: ${security.user.password}<br>  client:<br>    service-url:<br>      defaultZone: <a href="http://user:${REGISTRY_SERVER_PASSWORD:password}@registry:8761/eureka/" target="_blank" rel="noopener">http://user:${REGISTRY_SERVER_PASSWORD:password}@registry:8761/eureka/</a></p>
+<hr>
+<p>spring:<br>  profiles: config1<br>server:</p>
+<h2 id="port-8888"><a href="#port-8888" class="headerlink" title="  port: 8888"></a>  port: 8888</h2><p>spring:<br>  profiles: config2<br>server:</p>
+<h2 id="port-8889"><a href="#port-8889" class="headerlink" title="  port: 8889"></a>  port: 8889</h2><p>spring:<br>  profiles: config3<br>server:<br>  port: 8890<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">* 启动config时指定激活的profile</span><br><span class="line">```  </span><br><span class="line">java -Dspring.profiles.active=config3 -jar scs-config.jar</span><br><span class="line">或者</span><br><span class="line">java -jar scs-config.jar --spring.profiles.active=config3</span><br><span class="line">```  </span><br><span class="line">* config client 通过eureka发现配置服务</span><br></pre></td></tr></table></figure></p>
+<h1 id="在微服务的bootstrap-yml中配置-，注意必须是bootstrap-yml不可以是application-yml"><a href="#在微服务的bootstrap-yml中配置-，注意必须是bootstrap-yml不可以是application-yml" class="headerlink" title="在微服务的bootstrap.yml中配置 ，注意必须是bootstrap.yml不可以是application.yml"></a>在微服务的bootstrap.yml中配置 ，注意必须是bootstrap.yml不可以是application.yml</h1><p>spring:<br>  application:<br>    name: xxx-service<br>  cloud:<br>    config:<br>      discovery:<br>        enabled: true<br>        service-id: config  # config 服务的service-id<br>      fail-fast: true<br>      username: user<br>      password: ${CONFIG_SERVER_PASSWORD:password}<br>      retry:<br>        initial-interval: 2000<br>        max-interval: 10000<br>        multiplier: 2<br>        max-attempts: 10</p>
+<h1 id="配置服务发现，多个注册中心时defaultZone要指定多个url，逗号分割"><a href="#配置服务发现，多个注册中心时defaultZone要指定多个url，逗号分割" class="headerlink" title="配置服务发现，多个注册中心时defaultZone要指定多个url，逗号分割"></a>配置服务发现，多个注册中心时defaultZone要指定多个url，逗号分割</h1><p>eureka:<br>  instance:<br>    hostname: registry<br>    prefer-ip-address: true<br>  client:<br>    service-url:<br>      defaultZone: <a href="http://user:${REGISTRY_SERVER_PASSWORD:password}@registry:8761/eureka/" target="_blank" rel="noopener">http://user:${REGISTRY_SERVER_PASSWORD:password}@registry:8761/eureka/</a><br>```  </p>
+<h2 id="RabbitMQ-高可用"><a href="#RabbitMQ-高可用" class="headerlink" title="RabbitMQ 高可用"></a>RabbitMQ 高可用</h2><p>参考 <a href="https://www.jianshu.com/p/3a625aacd9aa" target="_blank" rel="noopener">在CentOS7上配置RabbitMQ 3.6.3集群与高可用</a> </p>
+<h2 id="gateway-高可用"><a href="#gateway-高可用" class="headerlink" title="gateway 高可用"></a>gateway 高可用</h2><ul>
+<li>多个zuulGateway 注册到Eureka-Server上，可以实现内部服务访问的高可用，但是外部的app/网站/其他公司的应用则无法保证其高可用</li>
+<li>实现高可用是通过 nginx + Keepalived 来实现，具体实现参考下面文章</li>
+<li><a href="https://segmentfault.com/a/1190000002881132" target="_blank" rel="noopener">Nginx+Keepalived实现站点高可用</a></li>
+<li><a href="http://seanlook.com/2015/05/17/nginx-install-and-config/" target="_blank" rel="noopener">nginx服务器安装及配置文件详解</a></li>
+</ul>
+
+    
+
     
 </div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/01/27/hello-world/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
